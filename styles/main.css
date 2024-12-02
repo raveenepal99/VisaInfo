@@ -1,0 +1,203 @@
+/* styles/main.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Calculator Container */
+.calculator-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Form Styling */
+#points-calculator-form {
+    flex: 2;
+    min-width: 250px;
+}
+
+#points-calculator-form .form-group {
+    margin-bottom: 15px;
+}
+
+#points-calculator-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#points-calculator-form select,
+#points-calculator-form input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#points-calculator-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Points Display Styling */
+#points-display {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+#points-display h3 {
+    margin: 0 0 10px 0;
+}
+
+#points-display p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#points-display span {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Question Mark Hyperlink Styling */
+.info-link {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+/* Info Text Styling */
+.info-text {
+    display: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #eef9ff;
+    border-left: 3px solid #007BFF;
+    font-size: 14px;
+    color: #333;
+}
+
+.info-text p {
+    margin: 0;
+}
+
+/* Highlighting Total Points Change */
+.highlight {
+    transition: color 0.3s ease;
+    color: #FF5722 !important;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .calculator-container {
+        flex-direction: column;
+    }
+
+    #points-display {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}

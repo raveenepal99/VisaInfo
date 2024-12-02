@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PR Points Calculator - Immigration Helper</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>PR Points Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="payslip-analyzer.html">Payslip Analyzer</a></li>
+                <li><a href="course-filter.html">Course Filter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- PR Points Calculator Section -->
+        <section id="pr-calculator">
+            <p>Calculate your PR points based on various criteria.</p>
+
+            <!-- Calculator Container -->
+            <div class="calculator-container">
+                <!-- PR Points Calculator Form -->
+                <form id="points-calculator-form">
+                    <!-- Age -->
+                    <div class="form-group">
+                        <label for="age">Age:
+                            <a href="#" class="info-link" data-info="age-info">[?]</a>
+                        </label>
+                        <select id="age">
+                            <option value="0">Select Age</option>
+                            <option value="25">18-24 years</option>
+                            <option value="30">25-32 years</option>
+                            <option value="25">33-39 years</option>
+                            <option value="15">40-44 years</option>
+                        </select>
+                        <div class="info-text" id="age-info">
+                            <p>Points are awarded based on your age at the time of invitation. Maximum points are awarded for ages 25-32.</p>
+                            <table border = "1">
+                                <tr>
+                                    <th>At the time of invitation to apply for the visa, the applicant was..</th>
+                                    <th>Number of points</th>
+                                </tr>
+                                <tr>
+                                    <td>not less than 18 and under 25</td>
+                                    <td>25 points</td>
+                                </tr>
+                                <tr>
+                                    <td>not less than 25 and under 33</td>
+                                    <td>30 points</td>
+                                </tr>
+                                <tr>
+                                    <td>not less than 33 and under 40</td>
+                                    <td>25 points</td>
+                                </tr>
+                                <tr>
+                                    <td>not less than 40 and under 45</td>
+                                    <td>15 points</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- English Language Ability -->
+                    <div class="form-group">
+                        <label for="english">English Language Ability:
+                            <a href="#" class="info-link" data-info="english-info">[?]</a>
+                        </label>
+                        <select id="english">
+                            <option value="0">Select English Proficiency</option>
+                            <option value="20">Superior English</option>
+                            <option value="10">Proficient English</option>
+                            <option value="0">Competent English</option>
+                        </select>
+                        <div class="info-text" id="english-info">
+                            <p>Points are awarded based on your English language test scores. Higher proficiency levels earn more points.</p>
+                            <table border = "1">
+                                <tr>
+                                    <th>English Proficiency</th>
+                                    <th>Required Score</th>
+                                    <th>Number of Points</th>
+                                </tr>
+                                <tr>
+                                    <td>SUPERIOR ENGLISH</td>
+                                    <td>a Score of at least 8 in each of the four test components of speaking, reading, writing and listening</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>PROFICIENT ENGLISH</td>
+                                    <td>a Score of at least 7 in each of the four test components of speaking, reading, writing and listening</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>COMPETENT ENGLISH</td>
+                                    <td>a Score of at least 6 in each of the four test components of speaking, reading, writing and listening</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>        
+                            <P>The Test must have been conducted in the 3 years immediately before the day on which the person was invited to apply for the visa and the person achieved the specified score</P>
+                        </div>
+                    </div>
+
+                    <!-- Overseas Skilled Employment -->
+                    <div class="form-group">
+                        <label for="overseas-experience">Overseas Skilled Employment (in years):
+                            <a href="#" class="info-link" data-info="overseas-experience-info">[?]</a>
+                        </label>
+                        <select id="overseas-experience">
+                            <option value="0">Select Years</option>
+                            <option value="0">Less than 3 years</option>
+                            <option value="5">At least 3 years</option>
+                            <option value="10">At least 5 years</option>
+                            <option value="15">At least 8 years</option>
+                        </select>
+                        <div class="info-text" id="overseas-experience-info">
+                            <p>Points for skilled employment outside Australia in your nominated occupation or a closely related occupation.</p>
+                            
+                            <table>
+                                <tr>
+                                    <th>At the time of invitation to apply for the visa, the applicant...</th>
+                                    <th>Number of Points</th>
+                                </tr>
+                                <tr>
+                                    <td>Had been employed outside Australia in:<br>
+                                        (a) The applicant’s nominated skilled occupation; or<br>
+                                        (b) A closely related skilled occupation;<br>
+                                        for a period totalling at least 36 months in the 10 years immediately before that time.
+                                    </td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Had been employed outside Australia in:<br>
+                                        (a) The applicant’s nominated skilled occupation; or<br>
+                                        (b) A closely related skilled occupation;<br>
+                                        for a period totalling at least 60 months in the 10 years immediately before that time.
+                                    </td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Had been employed outside Australia in:<br>
+                                        (a) The applicant’s nominated skilled occupation; or<br>
+                                        (b) A closely related skilled occupation;<br>
+                                        for a period totalling at least 96 months in the 10 years immediately before that time.
+                                    </td>
+                                    <td>15</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Australian Skilled Employment -->
+                    <div class="form-group">
+                        <label for="aus-experience">Australian Skilled Employment (in years):
+                            <a href="#" class="info-link" data-info="aus-experience-info">[?]</a>
+                        </label>
+                        <select id="aus-experience">
+                            <option value="0">Select Years</option>
+                            <option value="0">Less than 1 year</option>
+                            <option value="5">At least 1 year</option>
+                            <option value="10">At least 3 years</option>
+                            <option value="15">At least 5 years</option>
+                            <option value="20">At least 8 years</option>
+                        </select>
+                        <div class="info-text" id="aus-experience-info">
+                            <p>Points for skilled employment in Australia in your nominated occupation or a closely related occupation.</p>
+                            <table>
+                                <tr>
+                                    <th>At the time of invitation to apply for the visa, the applicant...</th>
+                                    <th>Number of Points</th>
+                                </tr>
+                                <tr>
+                                    <td>Had been employed in Australia in:<br>
+                                        (a) The applicant’s nominated skilled occupation; or<br>
+                                        (b) A closely related skilled occupation;<br>
+                                        for a period totalling at least 12 months in the 10 years immediately before that time.
+                                    </td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Had been employed in Australia in:<br>
+                                        (a) The applicant’s nominated skilled occupation; or<br>
+                                        (b) A closely related skilled occupation;<br>
+                                        for a period totalling at least 36 months in the 10 years immediately before that time.
+                                    </td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Had been employed in Australia in:<br>
+                                        (a) The applicant’s nominated skilled occupation; or<br>
+                                        (b) A closely related skilled occupation;<br>
+                                        for a period totalling at least 60 months in the 10 years immediately before that time.
+                                    </td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Had been employed in Australia in:<br>
+                                        (a) The applicant’s nominated skilled occupation; or<br>
+                                        (b) A closely related skilled occupation;<br>
+                                        for a period totalling at least 96 months in the 10 years immediately before that time.
+                                    </td>
+                                    <td>20</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Educational Qualifications -->
+                    <div class="form-group">
+                        <label for="education">Educational Qualifications:
+                            <a href="#" class="info-link" data-info="education-info">[?]</a>
+                        </label>
+                        <select id="education">
+                            <option value="0">Select Qualification</option>
+                            <option value="20">Doctorate</option>
+                            <option value="15">Bachelor's or Master's degree</option>
+                            <option value="10">Diploma or trade qualification (Australian institution)</option>
+                            <option value="10">Qualification recognized by assessing authority</option>
+                        </select>
+                        <div class="info-text" id="education-info">
+                            <p>Points are awarded for your highest educational qualification.</p>
+                        </div>
+                    </div>
+
+                    <!-- Specialist Educational Qualification -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="specialist-education" value="10">
+                            Specialist Educational Qualification
+                            <a href="#" class="info-link" data-info="specialist-education-info">[?]</a>
+                        </label>
+                        <div class="info-text" id="specialist-education-info">
+                            <p>Points for completing a Master's degree by research or a Doctorate degree in Australia in a relevant field.</p>
+                        </div>
+                    </div>
+
+                    <!-- Australian Study Requirement -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="australian-study" value="5">
+                            Australian Study Requirement
+                            <a href="#" class="info-link" data-info="australian-study-info">[?]</a>
+                        </label>
+                        <div class="info-text" id="australian-study-info">
+                            <p>Points for completing at least 2 academic years of study in Australia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Study in Regional Australia -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="regional-study" value="5">
+                            Study in Regional Australia
+                            <a href="#" class="info-link" data-info="regional-study-info">[?]</a>
+                        </label>
+                        <div class="info-text" id="regional-study-info">
+                            <p>Additional points for completing your Australian study requirement while living and studying in a designated regional area.</p>
+                        </div>
+                    </div>
+
+                    <!-- Credentialed Community Language -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="naati" value="5">
+                            Credentialed Community Language (NAATI)
+                            <a href="#" class="info-link" data-info="naati-info">[?]</a>
+                        </label>
+                        <div class="info-text" id="naati-info">
+                            <p>Points for holding a recognized qualification in translating or interpreting a community language.</p>
+                        </div>
+                    </div>
+
+                    <!-- Professional Year in Australia -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="professional-year" value="5">
+                            Professional Year in Australia
+                            <a href="#" class="info-link" data-info="professional-year-info">[?]</a>
+                        </label>
+                        <div class="info-text" id="professional-year-info">
+                            <p>Points for completing a Professional Year program in Australia in certain professions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Partner Skills -->
+                    <div class="form-group">
+                        <label for="partner-skills">Partner Skills:
+                            <a href="#" class="info-link" data-info="partner-skills-info">[?]</a>
+                        </label>
+                        <select id="partner-skills">
+                            <option value="0">Select Option</option>
+                            <option value="10">Single or partner is an Australian citizen or PR</option>
+                            <option value="10">Partner has competent English and skills assessment</option>
+                            <option value="5">Partner has competent English</option>
+                        </select>
+                        <div class="info-text" id="partner-skills-info">
+                            <p>Points based on your relationship status and your partner's qualifications.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <button id="reset-button" type="button">Reset</button>
+                </form>
+
+                <!-- Points Display -->
+                <div id="points-display">
+                    <h3>Total Points</h3>
+                    <p>Points for 189 Visa: <span id="total-points-189">0</span></p>
+                    <p>Points for 190 Visa: <span id="total-points-190">0</span></p>
+                    <p>Points for 491 Visa: <span id="total-points-491">0</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Immigration Helper</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/points-calculator.js"></script>
+</body>
+</html>

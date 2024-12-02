@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payslip Analyzer - Immigration Helper</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Payslip Analyzer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="points-calculator.html">PR Points Calculator</a></li>
+                <li><a href="course-filter.html">Course Filter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Payslip Analyzer Section -->
+        <section id="payslip-analyzer">
+            <p>Upload your payslips to calculate your work experience.</p>
+            <input type="file" id="payslip-upload" multiple accept="application/pdf">
+            <button id="analyze-button">Analyze Payslips</button>
+            <div id="analysis-result"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Immigration Helper</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/payslip-analyzer.js"></script>
+</body>
+</html>
